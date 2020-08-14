@@ -11,7 +11,7 @@ class VkBarkov(BasePage):
         if not self.is_element_present(*Conversion.LI_USER):
             self.browser.find_element(*Conversion.SUBMIT_VK).click()
             self.browser.find_element(*Conversion.VK_LOGIN).send_keys("+995579909741")
-            self.browser.find_element(*Conversion.VK_PASSWORD).send_keys("kar1992marg")
+            self.browser.find_element(*Conversion.VK_PASSWORD).send_keys("")
             self.browser.find_element(*Conversion.VK_SUBMIT).click()
             browser.execute_script("window.history.go(-2)")
         time.sleep(3)
